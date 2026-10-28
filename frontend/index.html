@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta
+      name="description"
+      content="Portfolio of Saurabh Patil, a software engineer exploring AI systems, retrieval, computer vision, and developer tooling."
+    />
+    <meta name="author" content="Saurabh Patil" />
+    <meta name="theme-color" content="#f4f3ed" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#111110" media="(prefers-color-scheme: dark)" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Saurabh Patil — AI & Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software engineer exploring AI systems, retrieval, computer vision, and developer tooling."
+    />
+    <meta name="twitter:card" content="summary" />
+    <title>Saurabh Patil — AI &amp; Software Engineer</title>
+    <script>
+      (function () {
+        try {
+          var stored = localStorage.getItem('sp-theme')
+          var theme =
+            stored === 'light' || stored === 'dark'
+              ? stored
+              : window.matchMedia('(prefers-color-scheme: dark)').matches
+                ? 'dark'
+                : 'light'
+          document.documentElement.dataset.theme = theme
+          document.documentElement.style.colorScheme = theme
+        } catch (error) {
+          document.documentElement.dataset.theme = 'light'
+        }
+      })()
+    </script>
+  </head>
+  <body id="top">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

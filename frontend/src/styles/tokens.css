@@ -1,0 +1,83 @@
+:root {
+  color-scheme: light;
+
+  --bg: #f4f3ed;
+  --bg-elevated: #faf9f4;
+  --surface: #efede5;
+  --surface-2: #e8e5db;
+
+  --ink: #1a1a18;
+  --ink-muted: #5a5952;
+  --ink-subtle: #68645b;
+
+  --line: #d7d4c8;
+  --line-strong: #b5b2a6;
+
+  --accent: #2e5138;
+  --accent-hover: #3b6648;
+  --accent-ink: #f7f6f0;
+  --accent-subtle: #c8ddc9;
+  --accent-soft: rgb(46 81 56 / 0.1);
+
+  --error: #b5473a;
+
+  --font-display: 'Bricolage Grotesque Variable', 'Trebuchet MS', sans-serif;
+  --font-body: 'Inter Variable', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'SFMono-Regular', monospace;
+
+  --text-2xs: 0.625rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-md: 1rem;
+  --text-lg: 1.0625rem;
+
+  --step--1: 0.875rem;
+  --step-0: 1rem;
+  --step-1: clamp(1.1875rem, 0.4vw + 1.09rem, 1.375rem);
+  --step-2: clamp(1.7rem, 1vw + 1.45rem, 2.25rem);
+  --step-3: clamp(2.15rem, 2.6vw + 1.45rem, 3.35rem);
+  --step-4: clamp(2.85rem, 4.2vw + 1.35rem, 4.9rem);
+  --step-5: clamp(3.1rem, 5.8vw + 1.2rem, 7.5rem);
+
+  --container: 90vw;
+  --gutter: clamp(1.25rem, 4vw, 2.5rem);
+  --section-y: clamp(4.5rem, 9vw, 8rem);
+  --header-h: 68px;
+
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --shadow-card: 0 18px 40px -28px rgb(26 26 24 / 0.35);
+  --shadow-menu: 0 24px 50px -20px rgb(26 26 24 / 0.25);
+
+  --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+[data-theme='dark'] {
+  color-scheme: dark;
+
+  --bg: #111110;
+  --bg-elevated: #171715;
+  --surface: #1c1c1a;
+  --surface-2: #262622;
+
+  --ink: #f0ede6;
+  --ink-muted: #9e9b92;
+  --ink-subtle: #8f8c83;
+
+  --line: #2c2c28;
+  --line-strong: #3e3d38;
+
+  --accent: #8fb87a;
+  --accent-hover: #a6cc94;
+  --accent-ink: #162412;
+  --accent-subtle: #293826;
+  --accent-soft: rgb(143 184 122 / 0.12);
+
+  --error: #e07a6b;
+
+  --shadow-card: 0 22px 50px -30px rgb(0 0 0 / 0.8);
+  --shadow-menu: 0 28px 55px -18px rgb(0 0 0 / 0.65);
+}
